@@ -25,6 +25,8 @@
         <field name="context">{}</field>
     </record>
 
+
+
     <menuitem name="疫情记录" id="epidemic_record_menu_root" groups="base.group_user" sequence="10"/>
     <menuitem name="疫情记录" id="sec_epidemic_recode_menu"
               parent="epidemic_record_menu_root"

@@ -9,9 +9,12 @@
     """,
     # data files always loaded at installation
     'data': [
-        'views/epidemic_record_view.xml'
+        'views\estate_property_views.xml',
+        'security\ir.model.access.csv'
     ],
     # data files containing optionally loaded demonstration data
     'demo': [
     ],
+
+    'application' : True,
 }

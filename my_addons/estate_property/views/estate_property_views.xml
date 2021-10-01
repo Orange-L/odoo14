@@ -18,21 +18,24 @@
                 <field name="garden"/>
                 <field name="garden_area"/>
                 <field name="garden_orientation"/>
+                <field name="active"/>
+                <field name="state"/>
             </tree>
         </field>
     </record>
 
     <record id="estate_property_action" model="ir.actions.act_window">
-        <field name="name">Estate action</field>
+        <field name="name">房地产广告广告位</field>
         <field name="res_model">estate.property</field>
         <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
     </record>
 
-    <menuitem id="estate_property_menu_action" action="estate_property_action"/>
-
-    <menuitem id="estate_menu_root" name="房地产广告">
-        <menuitem id="estate_first_level_menu" name="First Level">
+    <menuitem id="estate_property_menu_root" name="房地产广告" sequence="0">
+        <menuitem id="estate_property_first_level_menu" name="点这里进入房地产广告">
             <menuitem id="estate_property_menu_action" action="estate_property_action"/>
         </menuitem>
     </menuitem>
+
+
 </odoo>
